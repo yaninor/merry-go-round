@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+        }
+
+        .box {
+            width: 174px;
+            height: 126px;
+            background: url(img/fish.png) no-repeat;
+            animation: fish 1s steps(11) infinite;
+        }
+        @keyframes fish {
+            from{}
+            to{
+                background-position-y: -1386px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

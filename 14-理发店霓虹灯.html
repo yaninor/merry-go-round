@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        .box {
+            width: 50px;
+            height: 200px;
+            border:1px solid black;
+            background: linear-gradient(30deg, red 25%, white 25%, 50%, blue 50%, 75%, red 75%) repeat bottom / 50px 100px;
+            /* background: linear-gradient(35deg, red 25%, white 25%, 50%, blue 50%, 75%, red 75%) repeat bottom / 50px 100px; */
+            animation: current .5s  infinite;
+
+        }
+        @keyframes current {
+            from{}
+            to {
+                background-position-y: -200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

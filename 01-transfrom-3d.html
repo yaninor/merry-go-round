@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style>
+        .bigbox:hover>li {
+            transition: all 1s;
+            transform: rotateY(90deg);
+        }
+
+        .bigbox {
+            perspective: 1000px;
+            list-style: none;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .bigbox > li {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            background-color: yellowgreen;
+            transform-style: preserve-3d;
+            transform-origin: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="bigbox">
+        <li class="box1"></li>
+        <li class="box2"></li>
+        <li class="box3"></li>
+        <li class="box4"></li>
+        <li class="box5"></li>
+    </ul>
+</body>
+</html>

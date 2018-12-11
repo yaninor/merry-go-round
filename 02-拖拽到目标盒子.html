@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            float: left;
+        }
+        .box {
+            width: 300px;
+            height: 500px;
+            border: 1px solid black;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="red" draggable="true"></div>
+    <div class="box"></div>
+    <script>
+        var red = document.querySelector('.red');
+        var box = document.querySelector('.box')
+        box.ondragover = function (e){
+            e.preventDefault();
+        }
+        box.ondrop = function (e){
+            e.preventDefault();
+            console.log(111);
+            
+            document.querySelector('.box').appendChild(red);
+        }
+    </script>
+</body>
+</html>
